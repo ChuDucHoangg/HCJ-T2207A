@@ -1,0 +1,15 @@
+h1{
+    color: mediumturquoise;
+    }
+p{
+    color: #440080;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+    line-height: 3.5;
+    text-decoration: overline;/* underline line-through overline*/
+    text-align: center;/* left right center justify */
+    text-transform: uppercase;/* uppercase lowercase*/
+    background-color: deeppink;
+    width: 25px;
+}
