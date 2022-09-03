@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    float: none;
+    margin: 0 auto;
+}
+.sidebar{
+    float: left;
+    width: 12%;
+}
+.content{
+    float: left;
+    width: 50%;
+}
+.content{
+    float: left;
+    width: 10%;
+}
+.test{
+    float: right;
+    width: 38%;
+}
+body{
+    background-color: whitesmoke;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.35;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+hr{
+    width: 100%;
+}
+#box-1{
+    line-height: 45px;
+    background-color: white;
+}
+#box-2{
+    line-height: 42px;
+    background-color: white;
+}
+.thunghang{
+    width: 1200px;
+    float: none;
+    margin: 0 auto;
+}
+.food{
+    float: left;
+    width: 48%;
+    line-height: 30px;
+}
+.home{
+    float: left;
+    width: 5%;
+}
+.about{
+    float: left;
+    width: 5%;
+}
+.page{
+    float: left;
+    width: 5%;
+}
+.blog{
+    float: left;
+    width: 5%;
+}
+.gallri{
+    float: left;
+    width: 5%;
+}
+.team{
+    float: left;
+    width: 5%;
+}
+.store{
+    float: left;
+    width: 5%;
+}
+.elements{
+    float: left;
+    width: 7%;
+}
+.gio{
+    float: left;
+    width: 5%;
+}
+.timkiem{
+    float: left;
+    width: 5%;
+}
+.box-1{
+    background-color: white;
+    width: calc(25% - 25px);
+    float: left;
+    margin: 30px 60px auto;
+    padding: 10px 12px;
+    box-sizing: content-box;
+    border: 2px orange;
+    border-radius: 10px;
+    transition: all 1000ms
+}
+h3 {
+    color: orange;
+}
+p{
+    color: black;
+}
+.box-1:hover{
+    transform: scale(1.1);
+}
