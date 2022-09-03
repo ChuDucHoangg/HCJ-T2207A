@@ -1,0 +1,19 @@
+figure{
+    text-align: right;
+}
+body{
+    width: 770px;
+    text-align: justify;
+    margin: -5px auto;
+}
+b{
+    text-decoration : underline;
+}
+i{
+    font-weight: 700;
+}
+div{
+    float: left;
+    margin: -5px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,78 @@
+div {
+    width: calc(25% - 30px);
+    /*height: 400px;*/
+    float: left;
+    border: 2px solid mediumturquoise; /*solid dotted dashed*/
+    /* border-left:
+    border-top:
+    border-right:
+    border-bottom:
+     */
+    margin: 10px 15px;
+    /*
+    margin-top 10px
+    margin-right 15px
+    margin-bottom 20px
+    margin-left  25px
+     */
+    padding: 10px 15px;
+    /*
+    padding-top 10px
+    padding-right 15px
+    padding-bottom 20px
+    padding-left 25px
+     */
+    box-sizing: border-box;
+
+    box-shadow: 0px 0px 20px mediumturquoise;
+    border-radius: 12px;
+    transition: all 1000ms
+}
+div:hover{
+    /*transform: rotate(180deg);*/
+    /*transform: scale(1.1);*/
+    transform: rotate(180deg);
+}
+img{
+     max-width: 100%;
+}
+#box-7{
+    background-color: green;
+}
+.box-orange{
+    background: blueviolet;
+}
+.box-special{
+    color: brown;
+    background-color: bisque;
+}
+
+
+
+
+/*danh sach uu tiem*/
+body .dp #pid{
+    color: aquamarine;
+}
+#pid{
+    color: deepskyblue;
+}
+.dp .pc{
+    color: green;
+}
+div .pc{
+    color: pink;
+}
+.pc{
+    color: red;
+}
+body div p{
+    color: brown;
+}
+div p{
+    color: blueviolet;
+}
+
+p{
+    color: black;
+}
