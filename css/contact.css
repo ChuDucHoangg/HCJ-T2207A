@@ -1,0 +1,16 @@
+h1{
+    background-color: chartreuse;
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+section{
+    width: 50%;
+}
+input{
+    width: 32%;
+}
+button{
+    margin-top: 3%;
+    padding: 10px;
+}
