@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="boot/bootstrap5.2.1/css/bootstrap.css">
+
+</head>
+<body>
+<section class="section">
+    <div class="container">
+        <div class="row" id="sd">
+
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    var xhttp=new XMLHttpRequest();
+    xhttp.onload=function (){
+        var data=JSON.parse(this.responseText);
+        var sd = data.list;
+        for(var i=0; i<sd.length;i++){
+            var li_html=` <div class="col-3">
+        <div class="card mb-3 mt-1" >
+  <div class="card-body">
+    <p class="card-text">${sd[i].dt_txt}</p>
+      <img src=" http://openweathermap.org/img/wn/${sd[i].weather[0].icon}@2x.png"  alt="">
+    <h5 class="card-title">${sd[i].main.temp}</h5>
+    <p class="dubao">${sd[i].weather[0].description}</p>
+  </div>
+</div>
+</div>`;
+            var ds=document.getElementById("sd");
+            ds.innerHTML += li_html;
+        }
+
+    }
+    var url="https://api.openweathermap.org/data/2.5/forecast?q=Hanoi&appid=09a71427c59d38d6a34f89b47d75975c&units=metric";
+    xhttp.open("GET",url,true);
+    xhttp.send();
+</script>
+</body>
+</html>

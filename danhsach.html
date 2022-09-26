@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ass6</title>
+    <link rel="stylesheet" href="boot/bootstrap5.2.1/css/bootstrap.css">
+</head>
+<body>
+<section class="section">
+    <div class="container">
+        <div class="row" id="ls">
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    var xhttp=new XMLHttpRequest();
+    xhttp.onload = function () {
+        var data = JSON.parse(this.responseText);
+        var ls = data.data;
+        for (var i = 0; i < ls.length; i++) {
+            var li_html = `   <div class="col-3">
+        <div class="card mb-3 mt-1">
+          <img src="${ls[i].image}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">${ls[i].name}</h5>
+            <p class="card-text">${ls[i].description}</p>
+            <a href="#" class="btn btn-primary">${ls[i].price}</a>
+          </div>
+        </div>
+      </div>`;
+
+            var ds = document.getElementById("ls");
+            ds.innerHTML += li_html;
+        }
+    }
+    var url="https://foodgroup.herokuapp.com/api/today-special";
+    xhttp.open("GET",url,true);
+    xhttp.send();
+
+
+
+
+</script>
+</body>
+</html>
